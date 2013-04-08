@@ -14,11 +14,7 @@ public class HomePage extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< HEAD
-//        setContentView(R.layout.activity_home_page);
-=======
         setContentView(R.layout.activity_home_page);
->>>>>>> f1d7d30a59408d03bbe8876c59fa3afd74e648b1
         
         final ActionBar bar = getActionBar();
         bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
@@ -33,10 +29,7 @@ public class HomePage extends Activity {
         videoRobotB.putInt("num", 2);
         stateB.putInt("num", 3);
         attempt.putInt("num", 4);
-<<<<<<< HEAD
-=======
         
->>>>>>> f1d7d30a59408d03bbe8876c59fa3afd74e648b1
         Bundle example1 = new Bundle();
         example1.putInt("num", 5);
         Bundle example2 = new Bundle();
@@ -49,11 +42,7 @@ public class HomePage extends Activity {
         bar.addTab(bar.newTab()
                 .setText("Home")
                 .setTabListener(new TabListener<FragmentStack.CountingFragment>(
-<<<<<<< HEAD
-                        this, "Home", FragmentStack.CountingFragment.class, videoStateB)));
-=======
                         this, "activity_main_viewer", FragmentStack.CountingFragment.class, videoStateB)));
->>>>>>> f1d7d30a59408d03bbe8876c59fa3afd74e648b1
         bar.addTab(bar.newTab()
                 .setText("Profile")
                 .setTabListener(new TabListener<FragmentStack.CountingFragment>(
@@ -152,11 +141,7 @@ public class HomePage extends Activity {
         }
 
         public void onTabReselected(Tab tab, FragmentTransaction ft) {
-<<<<<<< HEAD
-//            Toast.makeText(mActivity, "Reselected!", Toast.LENGTH_SHORT).show();
-=======
             Toast.makeText(mActivity, "Reselected!", Toast.LENGTH_SHORT).show();
->>>>>>> f1d7d30a59408d03bbe8876c59fa3afd74e648b1
         }
     }
 
