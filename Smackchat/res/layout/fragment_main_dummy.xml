@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:padding="4dip"
+    xmlns:app="http://schemas.android.com/apk/res/com.smackchat"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:gravity="center_horizontal"
-    android:layout_width="match_parent" android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res/com.smackchat">
+    android:orientation="vertical"
+    android:padding="4dip"
+    tools:ignore="UnusedNamespace" >
 
     <Button
         android:id="@+id/new_fragment"
@@ -11,51 +16,30 @@
         android:layout_weight="0"
         android:text="@string/new_fragment" />
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:text="Welcome to Smackchat!"
-        android:textSize="@dimen/main_activity_title" >
-    </EditText>
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:ems="10"
-        android:text="Active Bets:" >
-
-        <requestFocus />
-
-    </EditText>
-
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:contentDescription="Bets:" >
+        android:contentDescription="Bets:"
+        tools:ignore="HardcodedText" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What&apos;s New:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
 
-            <EditText
-                android:id="@+id/editText3"
+            <TextView
+                android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text="User" />
-
-            <EditText
-                android:id="@+id/editText5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:text="Wager" />
+                android:text="This is a feature" />
 
         </TableRow>
 
@@ -63,12 +47,6 @@
             android:id="@+id/tableRow2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
-
-            <EditText
-                android:id="@+id/editText6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10" />
 
         </TableRow>
 
@@ -80,6 +58,52 @@
 
         <TableRow
             android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Cool Stuff on Main page"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" >
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Here&apos;s some stuff" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
         </TableRow>
